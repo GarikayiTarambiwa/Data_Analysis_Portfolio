@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Garikayi Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/Garikayi.PNG" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Garikayi<br>Tarambiwa</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Data Analyst</p>
+            <img src="img/portfolio-07.jpg" alt="a picture of Garikayi smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Data Cleaning</h3>
+                    <p>I offer precise and meticulous data cleaning, ensuring your data's validity. My proficiency spans Python and R for data manipulation, SQL for complex query writing, and Excel for accessible cleaning. Melding these skills with a deep understanding of business context, I can identify anomalies and handle outliers. Thus, my service delivers clean data through a robust, efficient process.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Statistical Analysis</h3>
+                    <p> I offer robust statistical analysis skills, stemming from a solid mastery of Python and R. My expertise includes advanced techniques such as ANOVA, regression, and correlation, powered by libraries like Pandas, NumPy, dplyr, and caret. Furthermore, my experience with SQL allows for adept handling of large datasets and intricate queries. Beyond my technical prowess, my key focus lies in extracting and communicating actionable insights from data, aiding in strategic decision-making.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Data Visualization</h3>
+                    <p> I excel at transforming complex data into compelling visual narratives. Equipped with proficiency in tools such as Tableau, Power BI, Python (Matplotlib, Seaborn, Plotly), and R (ggplot), I can create interactive dashboards and dynamic charts that tell a clear and captivating story.. Merging my statistical analysis skills with my aesthetic sense, I offer clear and intuitive insights</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Data Analyst with a Chemical Engineering background</p>
+           
+           <div class="about-me__body">
+            <p>Hi, I'm Garikayi Tarambiwa, a driven and detail-oriented Data Analyst with a Chemical Engineering background. I am currently completing my Bachelor of Engineering Technology in Chemical Engineering at the University of Johannesburg. Being based in Johannesburg has allowed me to apply my data analysis skills in a variety of impactful projects, ranging from global population studies to intricate football performance metrics.</p>
+            <p>Proficient in SQL, Python, Excel, Tableau, rStudio, and Polymath, I've used my skills to manipulate and analyze data for insights, develop visualizations, and manage databases. My projects include an extensive analysis and visualization of a global population dataset, a detailed Soccer Power Index (SPI) analysis of various football leagues, and a comprehensive COVID-19 analysis using SQL and Tableau. I'm also part of an engineering team researching Electric Vehicle Conversion, conducting detailed data collection and analysis on vehicle performance metrics.</p>
+        </div>
+           <img src="img/portfolio-09.jpg" alt="Garikayi leaning against a bus" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+        
+            <div class="portfolio">
+                <!-- Portfolio item 01 - Global Population Analysis and Visualisation -->
+                <a href="portfolio-item1.html" class="portfolio__item" target="_blank">
+                    <img src="img/portfolio-01.jpg" alt="Global Population Analysis and Visualisation" class="portfolio__img">
+                    <p class="portfolio__title">Global Population Analysis and Visualisation</p>
+                </a>
+        
+                <!-- Portfolio item 02 - Football SPI Analysis -->
+                <a href="portfolio-item2.html" class="portfolio__item" target="_blank">
+                    <img src="img/portfolio-02.jpg" alt="Football SPI Analysis" class="portfolio__img">
+                    <p class="portfolio__title">Football SPI Analysis</p>
+                </a>
+        
+                   <!-- Portfolio item 03 - COVID-19 Analysis -->
+                <a href="portfolio-item3.html" class="portfolio__item" target="_blank">
+                    <img src="img/portfolio-03.jpg" alt="COVID-19 Analysis" class="portfolio__img">
+                     <p class="portfolio__title">COVID-19 Analysis</p>
+                </a>
+                <!-- Portfolio item 04 -->
+                <a href="portfolio-item4.html" class="portfolio__item" target="_blank">
+                    <img src="img/portfolio-04.jpg" alt="Contactlist Cleaning Project" class="portfolio__img">
+                     <p class="portfolio__title">Contactlist Cleaning Project</p>
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="portfolio-item5.html" class="portfolio__item" target="_blank">
+                    <img src="img/portfolio-05.jpg" alt="Rolling Stone Top 500 songs" class="portfolio__img">
+                     <p class="portfolio__title">Rolling Stone Top 500 songs</p>
+                </a>
+            
+            </div>
+        </section>
+        
+        
+<!-- Footer -->
+<footer class="footer">
+    <!-- replace with your own email address -->
+    <a href="mailto:GarikayiTarambiwa7@gmail.com" class="footer__link">GarikayiTarambiwa7@gmail.com</a>
+    <ul class="social-list">
+        <li class="social-list__item">
+            <!-- Replace '#' with your LinkedIn profile URL -->
+            <a class="social-list__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/GarikayiTarambiwa" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

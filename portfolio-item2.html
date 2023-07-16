@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Football SPI Analysis</title>
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/Garikayi.PNG" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Football SPI <strong>Analysis</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">by Garikayi Tarambiwa</p>
+            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>This dataset was obtained from fivethirtyeight a data-driven news website, founded by statistician Nate Silver, known for its deep dives into opinion poll analysis, politics, economics, sports, science, and lifestyle and can be accessed <a href="https://data.worldbank.org/indicator/SP.POP.TOTL"target="_blank">here</a>. 
+                <img src="img/Capture11.PNG" alt="">
+            <p class="image-caption">Fig 1. Sample of Dataset.</p>
+            <p>This code block is designed to analyze and visualize the average Soccer Power Index (SPI) by league. Specifically, it seeks to determine which leagues, on average, have the highest SPI.</p>
+            <img src="img/Capture12.PNG" alt="">
+            <p class="image-caption">Fig 2. Python Script to show SPI bar plot</p>
+            <p>Firstly, it separates the original DataFrame into two DataFrames: one for 'team1' (with the corresponding SPI and league) and another for 'team2' (also with the corresponding SPI and league). Both DataFrames are then combined into a single DataFrame, all_teams_df.
+
+                Next, it computes the average SPI for each league by grouping all_teams_df by the 'league' column and applying the mean function to the 'spi' column. The result is a series, average_spi_by_league, where the index is the league and the value is the average SPI for that league.
+                
+                The average SPIs are then sorted in descending order to identify which leagues have the highest average SPI. This sorted series is then transformed back into a DataFrame for further processing.</p>
+            <img src="img/Capture13.PNG" alt="">
+            <p class="image-caption">Fig 3. Visual Representation of SPI rankings according to league</p>
+            <p>Next, I analysed the South African ABSA Premier League, creating a clear visual representation using a bar plot.</p> 
+            <img src="img/Capture14.PNG" alt="">
+            <p class="image-caption">Fig 4. Python Script to show</p>
+            <p>By splitting the original DataFrame into two - one for 'team1' and another for 'team2', each associated with their SPI and league - and subsequently merging them, the code generates a comprehensive DataFrame, all_teams_df. It then calculates the average SPI for each team across all leagues and isolates the data for the South African ABSA Premier League. The resulting SPI averages are ordered in descending sequence, spotlighting the teams with the highest average SPI.</p> 
+            <img src="img/Capture15.PNG" alt="">
+            <p class="image-caption">Fig 5. Bar Plot showing SPI across the South African ABSA Premier League</p>
+            <p>The takeaway from this analysis is that, over the period from 2016 to 2022, Mamelodi Sundowns emerges as the top team in the South African ABSA Premier League given its highest average SPI, while Moroka Swallows, with the lowest average SPI, is identified as the weakest team.</p>
+            <p>Next, I analysed the performance of the calculates and visualizes the average Soccer Power Index (SPI) per season for the South African ABSA Premier League using the python code below.</p> 
+            <img src="img/Capture16.PNG" alt="">
+            <img src="img/Capture17.PNG" alt="">
+            <p class="image-caption">Fig 6. Python Script to show Bar Plot of average SPI of the South African ABSA Premier League from 2018 to 2022</p>
+
+            <p>Each data point on the plot is annotated with the corresponding SPI value. The analysis indicates a downward trend in the average SPI over the seasons, suggesting a decrease in the quality of South African football over the years.</p>
+            <img src="img/Capture1.PNG" alt="">
+            <p class="image-caption">Fig 7. Bar Plot of average SPI of the South African ABSA Premier League from 2018 to 2022. </p>
+
+
+            <p>The Jupyter Notebook to open the full python script for this project can be found <a href="https://github.com/GarikayiTarambiwa/Portfolio_Project/blob/main/Football_Exploratory_Data_Analysis.ipynb"target="_blank">here</a>.</p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:GarikayiTarambiwa7@gmail.com" class="footer__link">GarikayiTarambiwa7@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <!-- Replace '#' with your LinkedIn profile URL -->
+                    <a class="social-list__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/GarikayiTarambiwa" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
